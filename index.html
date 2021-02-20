@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!--We will learn order* and offset* classes as well as Jumbotron and list unstyled -->
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        <!-- Additional CSS must be placed after Bootstrap CSS -->
+         <!-- The fonts here aren't defaults which is why they are linked -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+       
+        <!-- Link to external stylesheet -->
+        <link rel="stylesheet" href="css/styles.css" />
+    
+        <title>NuCamp: A Better Way To Camp</title>
+    </head>
+
+<body>
+    
+
+    <header class="jumbotron jumbotron-fluid">
+        <!-- gets rid of rounded corners from padding -->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>NuCamp</h1>
+                    <h2>a better way to camp</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Added custom styles to row ... now "row row-content" -->
+        <!--We will vertically center the columns that are inside the content rows, 
+            using the Bootstrap Flexbox-based class align-items-center. 
+            For each of the three content row divs inside the body, 
+            update the rows to add the align-items-center class. 
+            can also use align-items-start align-items-end or align-items-self -->
+        <div class="row row-content align-items-center">
+            <div class="col-sm-4 order-sm-last col-md-3">
+                <!--To the h2 elements inside the first and last content rows, 
+                    add the responsive class text-sm-right, as you see below. 
+                    This class will only apply to small viewports and up, 
+                    and will align the text inside the h2 element to the right.-->
+                <h2 class="text-sm-right">Discover & Review</h2>
+            </div>
+            <div class="col">
+                <h3>Our Campsites</h3>
+                <!-- Also apply these two classes d-none and d-sm-block to the three p elements in the body of index.html -->
+                <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave your own reviews!</p>
+            </div>
+        </div>
+
+        <div class="row row-content align-items-center">
+            <div class="col-sm-4 col-md-3">
+                <h2>Featured Campsites</h2>
+            </div>
+            <div class="col">
+                <h3>React Lake Campground</h3>
+        		<p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+   			</div>
+        </div>
+
+        <div class="row row-content align-items-center">
+            <div class="col-sm-4 order-sm-last col-md-3">
+                <!--To the h2 elements inside the first and last content rows, 
+                    add the responsive class text-sm-right, as you see below. 
+                    This class will only apply to small viewports and up, 
+                    and will align the text inside the h2 element to the right.-->
+                <h2 class="text-sm-right">Our Community Partners</h2>
+            </div>
+            <div class="col">
+                <h3>Bootstrap Outfitters</h3>
+        		<p class="d-none d-sm-block">Bootstrap Outfitters supplies you with the gear you need at prices you can't beat.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">             
+                <div class="col-4 col-sm-2 offset-1">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <!-- In index.html's footer, in the Links, also 
+                            update the link to About to point to "aboutus.html" instead of "#" -->
+                        <li><a href="aboutus.html">Home</a></li>
+                        <li><a href="aboutus.html">About</a></li>
+                        <li><a href="aboutus.html">Sites</a></li>
+                        <li><a href="aboutus.html">Contact</a></li>
+                    </ul>
+                </div>
+                <!--To the div element for the Social links in the footer, 
+                    add a text-center class. Notice that this one does 
+                    not specify a breakpoint size; this means that 
+                    it is not a responsive class and will apply to all viewport sizes.
+                <div class="col-6 col-sm-5"> -->
+                    <div class="col-6 col-sm-5 text-center">
+                	<h5>Social</h5>
+                    <a href="http://instagram.com/">Instagram</a>
+                    <a href="http://facebook.com/">Facebook</a>
+                    <a href="http://twitter.com/">Twitter</a>
+                    <a href="http://youtube.com/">YouTube</a>
+                </div>
+                <!-- Also in the footer, to the div element for the tel and email, 
+                    apply the text-center class as well:
+
+                <div class="col-sm-4"> -->
+                    <div class="col-sm-4 text-center">
+                    Tel: 1-206-555-1234<br />
+                    Email: campsites@nucamp.co
+                </div>                
+           </div>
+        </div>
+    </footer>
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+cd
+
+</body>
+
+</html>
