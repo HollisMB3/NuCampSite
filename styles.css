@@ -1,0 +1,42 @@
+.p1 {
+    font-family: "Original Surfer", sans-serif;
+    
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    /* the first is the body default font the second is 
+    what to load if it can't load the default  */
+}
+
+h1, h2, h3 {
+    font-family: "Lobster", cursive;
+    /* this appllies to all three elements mentioned as a selector */
+}
+
+h2 {
+    color: #3046C5;
+    /* this appllies to all h2 elements and descendents   */
+}
+
+header h2 {
+    color: #CEC8FF;
+}
+
+footer {
+    background-image: linear-gradient(#CEC8FF, white);
+    padding: 20px 0;
+}
+
+.jumbotron {
+    padding: 30px;
+    background-image: linear-gradient(to right, #5637DD, #3046C5, #60106B);
+    color: white;
+    /* added padding and linear gradient left to right with three color stops */
+}
+
+.row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+}
